@@ -5,9 +5,34 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="/dist/output.css" rel="stylesheet">
 </head>
-<body>
-  <h1 class="text-3xl font-bold underline">
-    Hello world!
-  </h1>
+<body class="bg-gray-100 ">
+   <div class="flex justify-center h-screen w-screen items-center">
+    <div class="w-1/2 flex flex-col items-center gap-6" >
+        <!-- text login -->
+        <h1 class="text-center text-2xl font-bold text-gray-600">LOGIN</h1>
+        <!-- email input -->
+        <div class="w-3/4">
+            <input type="email" name="email" id="email" class="w-full py-4 px-8 bg-slate-200 placeholder:font-semibold rounded" placeholder="User Name">
+        </div>
+        <!-- password input -->
+        <div class="w-3/4">
+            <input type="password" name="password" id="password" class="w-full py-4 px-8 bg-slate-200 placeholder:font-semibold rounded" placeholder="Password">
+        </div>
+        <!-- remember input -->
+        <div class="w-3/4 flex flex-row justify-between">
+            <div class=" flex items-center gap-x-1">
+                <input type="checkbox" name="remember" id="" class=" w-4 h-4  ">
+                <label for="" class="text-sm text-slate-400">Remember me</label>
+            </div>
+            <div>
+                <a href="#" class="text-sm text-slate-400">Forgot?</a>
+            </div>
+        </div>
+        <!-- button -->
+        <div class="w-3/4 mt-4">
+            <button type="submit" class="py-4 bg-blue-400 w-full rounded text-blue-50 font-bold"> LOGIN</button>
+        </div>
+    </div>
+   </div>
 </body>
 </html>
